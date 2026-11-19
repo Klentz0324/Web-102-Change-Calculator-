@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cinzel:wght@400;700&display=swap');
+
+body {
+    background: radial-gradient(
+        circle at 50% 30%,
+        #42104f 0%,
+        #1a0b20 35%,
+        #0d090f 75%
+    );
+    color: #f1e7dd;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #820abd;
+    background-color: #2b0a1b;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: clamp(36px, 7vw, 64px);
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 25px;
+    border: 3px solid #7b2d8d;
+    border-radius: 15px;
+    text-shadow: 0 0 30px #b84dff;
+    box-shadow: 0 0 20px #5c176e;
+}
+
+h2 {
+    color: #e9c4d8;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+label {
+    display: block;
+    color: #e9c4d8;
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+input {
+    background-color: #120713;
+    color: #f1e7dd;
+    border: 2px solid #7b2d8d;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 18px;
+    width: 85%;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d88aff;
+    box-shadow: 0 0 15px #9d35c6;
+}
+button {
+    background-color: #590d22;
+    color: #f1e7dd;
+    border: 2px solid #9d35c6;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 25px;
+    width: 90%;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #9d35c6;
+    color: #ffffff;
+    box-shadow: 0 0 25px #9d35c6;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+.receipt {
+    background-color: #120713;
+    border: 2px dashed #9d35c6;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: inset 0 0 15px #3a091e;
+}
+
+.receipt h3 {
+    color: #d88aff;
+    font-size: 24px;
+    text-shadow: 0 0 10px #9d35c6;
+    border-bottom: 1px solid #7b2d8d;
+    padding-bottom: 15px;
+}
+
+.receipt p {
+    color: #e9c4d8;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #5c176e;
+    padding: 10px 0;
+}
+
+.receipt span {
+    color: #d88aff;
+    font-weight: bold;
+}
+
+.receipt-footer {
+    color: #a77b9b;
+    font-size: 12px;
+    margin-top: 25px;
+    font-style: italic;
+}
+h2, h3 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+}
+
+button {
+    font-family: 'Cinzel', serif;
+}
+
+label, .receipt p {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+.awning {
+    position: relative;
+    height: 85px;
+    width: 100%;
+
+    background: repeating-linear-gradient(
+        90deg,
+        #590d22 0px,
+        #590d22 50px,
+        #160a16 50px,
+        #160a16 100px
+    );
+
+    border-top: 5px solid #9d35c6;
+
+    box-shadow: 0 5px 25px #5c176e;
+}
+.awning::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    width: 100%;
+    height: 25px;
+
+    background:
+        radial-gradient(
+            ellipse 25px 25px at 25px 0,
+            #590d22 99%,
+            transparent 100%
+        ) 0 0 / 100px 25px repeat-x,
+
+        radial-gradient(
+            ellipse 25px 25px at 25px 0,
+            #160a16 99%,
+            transparent 100%
+        ) 50px 0 / 100px 25px repeat-x;
+
+    pointer-events: none;
+}
+.checkout-counter {
+    background-color: #1a0b16;
+    border: 3px solid #7b2d8d;
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 0 25px #5c176e;
+    box-sizing: border-box;
+}
+.candy-display {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.candy-jar {
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.jar-lid {
+    height: 22px;
+    width: 85%;
+    margin: auto;
+    background: linear-gradient(
+        #6b375d,
+        #210b20
+    );
+    border: 2px solid #b84dff;
+    border-radius: 12px 12px 4px 4px;
+}
+
+.jar-body {
+    min-height: 180px;
+    background: linear-gradient(
+        135deg,
+        rgba(157, 53, 198, 0.25),
+        rgba(20, 5, 25, 0.8)
+    );
+    border: 3px solid #9d35c6;
+    border-radius: 25px 25px 15px 15px;
+    box-shadow: inset 0 0 25px #5c176e,
+                0 0 15px #5c176e;
+    padding: 15px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.candy {
+    display: block;
+    font-size: 28px;
+}
+
+.jar-body h3 {
+    font-family: 'Cinzel', serif;
+    color: #e9c4d8;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #3a091e;
+    border: 1px solid #b84dff;
+    border-radius: 5px;
+    padding: 8px 3px;
+    margin: 5px 0 0;
+}
+
+.candy-jar:hover {
+    transform: translateY(-10px);
+}
+
+.candy-jar:hover .jar-body {
+    box-shadow: 0 0 30px #9d35c6,
+                inset 0 0 20px #9d35c6;
+}
+.candy-shelf {
+    width: 750px;
+    max-width: 90%;
+    height: 25px;
+    margin: -45px auto 50px;
+
+    background: linear-gradient(
+        to bottom,
+        #5c2338,
+        #2b0a1b,
+        #10050d
+    );
+
+    border: 2px solid #7b2d8d;
+    border-radius: 5px;
+
+    box-shadow:
+        0 8px 15px #000000,
+        0 0 20px #9d35c6;
+}
+.gothic-decorations {
+    position: relative;
+    height: 60px;
+}
+
+.web-left {
+    position: absolute;
+    left: 5%;
+    top: 5px;
+    font-size: 45px;
+}
+
+.web-right {
+    position: absolute;
+    right: 5%;
+    top: 5px;
+    font-size: 45px;
+}
+
+.bat {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    font-size: 40px;
+    transform: translateX(-50%);
+}
+.bat {
+    animation: floatBat 3s ease-in-out infinite;
+}
+
+@keyframes floatBat {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, -15px);
+    }
+}
+.jar-body {
+    position: relative;
+    overflow: hidden;
+}
+
+.jar-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 45%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.18),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+    animation: glassShimmer 5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes glassShimmer {
+    0%, 30% {
+        left: -80%;
+    }
+
+    70%, 100% {
+        left: 150%;
+    }
+}
+.candy {
+    animation: floatingCandy 3s ease-in-out infinite;
+}
+
+.candy:nth-of-type(2) {
+    animation-delay: 1.5s;
+}
+
+@keyframes floatingCandy {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+.candy-jar:hover .jar-body {
+    border-color: #e29aff;
+
+    box-shadow:
+        0 0 15px #9d35c6,
+        0 0 35px #7b2d8d,
+        inset 0 0 25px #9d35c6;
+
+    transition: box-shadow 0.3s ease;
+}
+.register-header {
+    background: linear-gradient(
+        135deg,
+        #3a091e,
+        #1a0b16,
+        #3a091e
+    );
+
+    border: 2px double #9d35c6;
+    border-radius: 12px;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+
+    box-shadow:
+        inset 0 0 15px #590d22,
+        0 0 15px #5c176e;
+}
+
+.register-header span {
+    color: #d88aff;
+    font-size: 24px;
+}
+
+.register-header h3 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 32px;
+    color: #e9c4d8;
+    margin: 10px 0;
+    text-shadow: 0 0 12px #9d35c6;
+}
+
+.register-header p {
+    color: #a77b9b;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.checkout-counter {
+    position: relative;
+
+    background: linear-gradient(
+        145deg,
+        #2b0a1b,
+        #100810,
+        #1a0b16
+    );
+
+    border: 5px ridge #7b2d8d;
+
+    box-shadow:
+        0 0 25px #5c176e,
+        inset 0 0 25px #3a091e;
+}
+.checkout-counter::before {
+    content: "✦";
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    color: #d88aff;
+    font-size: 22px;
+}
+
+.checkout-counter::after {
+    content: "✦";
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: #d88aff;
+    font-size: 22px;
+}
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 36px;
+        padding: 15px;
+        margin: 15px 10px;
+    }
+
+    h2 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 0 10px;
+    }
+
+    .candy-display {
+        gap: 15px;
+        padding: 10px;
+        margin: 25px auto;
+    }
+
+    .candy-jar {
+        width: 130px;
+    }
+
+    .jar-body {
+        min-height: 140px;
+        padding: 10px 5px;
+    }
+
+    .candy {
+        font-size: 22px;
+    }
+
+    .candy-shelf {
+        margin-top: -20px;
+    }
+
+    .checkout-counter {
+        width: 95%;
+        max-width: 95%;
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .register-header h3 {
+        font-size: 26px;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .receipt {
+        padding: 15px;
+    }
+
+    .receipt h3 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .receipt p {
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+}
+.candy-price {
+    background-color: #3a091e;
+    color: #d88aff;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    border: 1px solid #9d35c6;
+    border-radius: 5px;
+
+    padding: 8px;
+    margin: 5px 0;
+
+    text-shadow: 0 0 8px #9d35c6;
+}
+.candy-quantity {
+    width: 65px;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.jar-body label {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.shopping-total {
+    background-color: #120713;
+    border: 2px solid #9d35c6;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.shopping-total h3 {
+    color: #e9c4d8;
+}
+
+.shopping-total p {
+    color: #d88aff;
+    font-size: 22px;
+    font-weight: bold;
+}

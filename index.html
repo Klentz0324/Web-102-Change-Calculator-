@@ -1,14 +1,109 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Change Calculator</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadly Delights | Gothic Candy Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
   <body>
-    <!-- Write your markup here -->
+    <div class="awning"></div>
+    <div class="gothic-decorations">
+    <span class="web-left">🕸️</span>
+    <span class="bat">🦇</span>
+    <span class="web-right">🕸️</span>
+</div>
+<h1>☠ Deadly Delights ☠</h1>
+<h2>Sinfully Sweet • Dangerously Delicious</h2>
+<div class="candy-display">
 
-    <!-- Don't forget to add your <script> tag here -->
+    <div class="candy-jar">
+        <div class="jar-lid"></div>
+        <div class="jar-body">
+            <span class="candy">🐍 🍬 🐍</span>
+            <span class="candy">🐍 🍭 🐍</span>
+            <h3>Cursed Serpents</h3>
+            <p class="candy-price">$3.50</p>
+            <label for="serpents-quantity">Quantity:</label>
+<input
+    type="number"
+    id="serpents-quantity"
+    class="candy-quantity"
+    min="0"
+    value="0"
+>
+        </div>
+    </div>
 
-  </body>
+    <div class="candy-jar">
+        <div class="jar-lid"></div>
+        <div class="jar-body">
+            <span class="candy">🪲 🕷️ 🐛</span>
+            <span class="candy">🐜 🪳 🦂</span>
+            <h3>Creepy Crawlers</h3>
+            <p class="candy-price">$2.75</p>
+            <label for="crawlers-quantity">Quantity:</label>
+<input
+    type="number"
+    id="crawlers-quantity"
+    class="candy-quantity"
+    min="0"
+    value="0"
+>
+        </div>
+    </div>
+
+    <div class="candy-jar">
+        <div class="jar-lid"></div>
+        <div class="jar-body">
+            <span class="candy">🦂 🐍 🕷️</span>
+            <span class="candy">🍬 🐛 🍬</span>
+            <h3>Venomous Bites</h3>
+            <p class="candy-price">$4.25</p>
+            <label for="venom-quantity">Quantity:</label>
+<input
+    type="number"
+    id="venom-quantity"
+    class="candy-quantity"
+    min="0"
+    value="0"
+>
+        </div>
+    </div>
+
+</div>
+<div class="candy-shelf"></div>
+  <div class="checkout-counter">
+    <div class="shopping-total">
+    <h3>☠ Your Cursed Cart ☠</h3>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+</div>
+    <div class="register-header">
+    <span>✦ ☠ ✦</span>
+    <h3>The Haunted Register</h3>
+    <p>Every Penny Has a Price...</p>
+</div>
+
+        <label for="amount-due">Amount Due:</label>
+        <input type="number" id="amount-due" step="0.01">
+
+        <label for="amount-received">Amount Received:</label>
+        <input type="number" id="amount-received" step="0.01">
+
+       <button id="calculate-change">☠ Summon Your Change ☠</button>
+
+     <div class="receipt">
+    <h3>☠ Your Deadly Receipt ☠</h3>
+    <p>Dollars: <span id="dollars-output">0</span></p>
+    <p>Quarters: <span id="quarters-output">0</span></p>
+    <p>Dimes: <span id="dimes-output">0</span></p>
+    <p>Nickels: <span id="nickels-output">0</span></p>
+    <p>Pennies: <span id="pennies-output">0</span></p>
+    <div class="receipt-footer">
+        ✦ Thank You for Shopping at Deadly Delights ✦
+    </div>
+</div>
+
+    <script src="main.js"></script>
+</body>
 </html>
